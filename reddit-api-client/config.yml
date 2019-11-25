@@ -1,0 +1,12 @@
+services: 
+  beanstalkd: 
+    host: beanstalkd
+    port: 11300
+  redditApi: 
+    authDest: https://reddit.com/api/v1
+    clientId: ~
+    clientSecret: ~
+    redirectUrl: ~
+    refreshToken: ~
+    apiDest: https://reddit.com/
+    monitorSub: explainLikeImFive
