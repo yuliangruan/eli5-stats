@@ -15,13 +15,11 @@ try {
     const redditApi = new RedditApi(config.services.redditApi);
 
     redditApi.auth().getNew()
-        .then(
-            console.log
-        )
+        .then(console.log)
         .catch(function(err) {
             throw new exception(err);
         })
 
 } catch (e) {
-    console.log(e);
+    console.error(e);
 }
