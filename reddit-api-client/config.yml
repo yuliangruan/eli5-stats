@@ -10,3 +10,4 @@ services:
     refreshToken: ~
     apiDest: https://reddit.com/
     monitorSub: explainLikeImFive
+    getNewMax: 25

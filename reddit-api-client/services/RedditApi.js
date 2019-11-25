@@ -13,6 +13,7 @@ class RedditApi {
             redirectUrl:config.redirectUrl,
             monitorSub: config.monitorSub,
             refreshToken: config.refreshToken,
+            getNewMax: config.getNewMax
         }
         this.store={
             newPosts: [],
@@ -31,18 +32,6 @@ class RedditApi {
         } catch (e) {
             throw new exception('failed to create requestor ' + e)
         }
-    }
-
-    getNew(client) {
-        const opts = {
-            subreddit: this.config.monitorSub,
-            limit: 25
-        };
-
-        let r=client
-        return r.getNewComments(opts.subreddit, {
-            limit: opts.limit
-          })
     }
 }
 

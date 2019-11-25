@@ -14,7 +14,8 @@ try {
 
     const redditApi = new RedditApi(config.services.redditApi);
 
-    redditApi.auth().getNew()
+    redditApi.auth()
+    .getNew(config.services.redditApi.monitorSub,{limit: config.services.redditApi.getNewMax})
         .then(console.log)
         .catch(function(err) {
             throw new exception(err);
