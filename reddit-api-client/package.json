@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "async-redis": "^1.1.7",
+    "beanstalkd-worker": "^1.2.0",
     "exception": "^1.0.9",
     "fs": "0.0.1-security",
     "js-yaml": "^3.13.1",
     "promise": "^8.0.3",
-    "snoostorm": "^1.2.2",
     "snoowrap": "^1.20.1",
     "uuid": "^3.3.3"
   },

@@ -2,6 +2,10 @@ services:
   beanstalkd: 
     host: beanstalkd
     port: 11300
+    channel: default
+  redis:
+    host: redis
+    port: 6379    
   redditApi: 
     authDest: https://reddit.com/api/v1
     clientId: ~

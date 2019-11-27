@@ -20,6 +20,12 @@ class RedditApi {
         }
     }
 
+    /**
+     * establishes auth to reddit api
+     *
+     * @returns
+     * @memberof RedditApi
+     */
     auth () {
         try {
             let client = new snoowrap({
